@@ -1,19 +1,6 @@
-{% extends 'genedata/base.html' %}
+{% extends './base.html' %}
 
 {% block content %}
-    <h1>D.Bucheria Genes List</h1>
-    <h1>D.Bucha Genes</h1>
-    <table>
-        <tr>
-            <th>Gene ID</th>
-        </tr>
-        {% for gene in genes %}
-        <tr>
-            <tr><td><a href="/gene/{{gene.pk}}" >{{gene}}</a></td></tr> 
-        </tr>
-        {% endfor %}
-    </table>
-
     <h2>Select gene location</h2> 
     <a href="/list/Chromosome">Chromosome</a> OR <a href="/list/Plasmid">Plasmid</a>
 

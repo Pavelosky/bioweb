@@ -1,9 +1,5 @@
-<html>
-
-<head>
-</head>
-
-<body>
+{% extends './base.html' %}
+{% block content %}
     <h1>{{gene}}</h1>
     <table>
         <tr>
@@ -50,8 +46,4 @@
 
     <a href="/delete/{{gene.pk}}">DELETE RECORD</a> 
 
-    
-
-</body>
-
-</html>
+    {% endblock %}

@@ -1,11 +1,6 @@
-<html>
-
-<head>
-    <title>GeneData</title>
-</head>
-
-<body>
-    <h1>Filtered List</h1>
+{% extends './base.html' %}
+{% block content %}    
+<h1>Filtered List: {{type}}</h1>
     <table>
         <tr>
             <th>Gene ID</th>
@@ -16,6 +11,4 @@
         </tr>
         {% endfor %}
     </table>
-</body>
-
-</html>
+{% endblock %}

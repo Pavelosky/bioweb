@@ -1,6 +1,26 @@
 {% include "./header.html" %}
 {% include "./title.html" %}
+
+{% block geneList %}
+<div id="gene_list">
+    <h1>D.Bucha Genes</h1>
+    <table>
+        <tr>
+            <th>Gene ID</th>
+        </tr>
+        {% for gene in master_genes %}
+        <tr>
+        <tr>
+            <td><a href="/gene/{{gene.pk}}">{{gene}}</a></td>
+        </tr>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
+
 <div class="content">
     {% block content %}Didn't render content{% endblock %}
 </div>
+
 {% include "./footer.html" %}
