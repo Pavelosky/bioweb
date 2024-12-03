@@ -1,6 +1,15 @@
+{% load bootstrap4 %}
 {% load my_tags %}
-<div id="footer">
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-8" id="footer">
+    
     <hr>
     <h3>Number of genes: {% gene_count %}</h3>
     <p>Author: {% author_name %} Date: {% todays_date %}.</p>
 </div>
+</div>
+</div>
+</body>
+</html>

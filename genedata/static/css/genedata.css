@@ -33,6 +33,12 @@ body {
 a {
     text-decoration: none;
 }
+.navbar {
+    width: 100%;
+    background-color: #3caea3;
+    color: white;
+    padding: 0px;
+}
 
 .nav_link {
     color: white;
