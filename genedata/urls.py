@@ -7,4 +7,6 @@ urlpatterns = [
     path('list/<str:type>', views.list, name='list'),
     path('poslist/', views.poslist, name='poslist'),
     path('delete/<int:pk>', views.delete, name='delete'),
+    path('create_ec/', views.create_ec, name='create'),
+    path('create_gene/', views.create_gene, name='create_gene'),
 ] 
